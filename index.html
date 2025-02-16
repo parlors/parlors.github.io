@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Имя Музыканта</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">О музыканте</a></li>
+                <li><a href="#music">Музыка</a></li>
+                <li><a href="#concerts">Концерты</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Главная секция -->
+    <section id="home">
+        <h1>Добро пожаловать в мир [Имя Музыканта]</h1>
+        <button onclick="window.location.href='#music'">Слушать музыку</button>
+    </section>
+
+    <!-- Раздел "О музыканте" -->
+    <section id="about">
+        <h2>О музыканте</h2>
+        <p>[Текст биографии]</p>
+        <img src="bio-image.jpg" alt="Фото музыканта">
+    </section>
+
+    <!-- Раздел "Музыка" -->
+    <section id="music">
+        <h2>Музыка</h2>
+        <iframe src="https://open.spotify.com/embed/album/[album-id]" width="300" height="380" frameborder="0"></iframe>
+    </section>
+
+    <!-- Раздел "Концерты" -->
+    <section id="concerts">
+        <h2>Концерты</h2>
+        <table>
+            <tr>
+                <th>Дата</th>
+                <th>Город</th>
+                <th>Место</th>
+            </tr>
+            <tr>
+                <td>15.10.2023</td>
+                <td>Москва</td>
+                <td>Крокус Сити Холл</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Раздел "Контакты" -->
+    <section id="contact">
+        <h2>Контакты</h2>
+        <form>
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="email" placeholder="Ваш email" required>
+            <textarea placeholder="Сообщение"></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 [Имя Музыканта]. Все права защищены.</p>
+    </footer>
+</body>
+  </html>
